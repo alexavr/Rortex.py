@@ -1,8 +1,8 @@
 # On Kubrick: conda activate tmp
 
-import numpy as np
-import pandas as pd
-import xarray as xr
+import numpy as np  # conda install conda-forge::numpy
+import pandas as pd # conda install anaconda::pandas
+import xarray as xr # conda install -c conda-forge xarray dask netCDF4 bottleneck
 import datetime
 from pathlib import Path
 from config import *
