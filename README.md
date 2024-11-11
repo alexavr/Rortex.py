@@ -4,6 +4,8 @@ This code calculates Rortex criteria out of the numerical model output (currentl
 # Installation
 
 ```bash
+conda create -n R
+conda activate R
 conda install conda-forge::numpy
 conda install anaconda::pandas
 conda install -c conda-forge xarray dask netCDF4 bottleneck
