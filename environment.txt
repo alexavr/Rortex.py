@@ -1,0 +1,7 @@
+xarray
+dask
+netCDF4
+bottleneck
+pandas
+argparse
+numpy
