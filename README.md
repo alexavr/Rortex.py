@@ -4,11 +4,9 @@ This code calculates Rortex criteria out of the numerical model output (currentl
 # Installation
 
 ```bash
-conda create -n R
-conda activate R
-conda install conda-forge::numpy
-conda install anaconda::pandas
-conda install -c conda-forge xarray dask netCDF4 bottleneck
+git clone https://github.com/alexavr/Rortex.py.git
+cd Rortex.py
+conda env create --file=environment.yml
 ```
 
 # Contains 
@@ -16,7 +14,9 @@ conda install -c conda-forge xarray dask netCDF4 bottleneck
 
 
 # Using
-
+```bash
+python r.py tensor_file.nc
+```
 
 # Rortex
 Rortex [cite] is the vortex identification method out of the eurlian class methods. 

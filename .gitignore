@@ -1,5 +1,6 @@
 # Data to aviod Github
 *00:00:00
+*.nc
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

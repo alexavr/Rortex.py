@@ -1,15 +1,18 @@
 # On Kubrick: conda activate tmp
 
 import cs_lib as cs
-import argparse
+import sys
+
+OUTPUT_PATH = f"./data_out/"
 
 def main():
 
-    parser = argparse.ArgumentParser(description = "Code for computing Rortex from WRF data")
-    parser.add_argument('-i', '--input', type=str, help="Input file with tensor components", required=True)
-    args = parser.parse_args()
+    if len(sys.argv) == 2:
+        filename = sys.argv[1]
+    else:
+        exit("No arguments provided.")
 
-    cs.rortex(args.input)
+    cs.rortex(OUTPUT_PATH,filename)
 
 if __name__ == "__main__":
     main()

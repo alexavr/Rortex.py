@@ -1,0 +1,13 @@
+name: rortex 
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.2
+  - pandas
+  - netCDF4
+  - numpy
+  - scipy
+  - xarray
+  - dask
+  - bottleneck
+  - xarray-einstats
